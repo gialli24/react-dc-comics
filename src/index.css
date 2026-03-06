@@ -3,3 +3,52 @@
 body {
     font-family: 'Open Sans Variable', sans-serif;
 }
+
+/* Variables */
+:root {
+    --color-white: #ffffff;
+    --color-primary: #0282F9;
+    --color-dark: #1C1C1C;
+}
+
+/* Header region */
+header {
+    height: 100px;
+    background-color: var(--color-white);
+
+    &>.container {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+header .logo {
+    height: 50%;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+
+    &>.nav-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        font-weight: 600;
+        letter-spacing: -1px;
+        text-decoration: none;
+        color: var(--color-dark);
+
+        border-bottom: 5px solid var(--color-white);
+    }
+
+    &>.nav-item.active {
+        color: var(--color-primary);
+        border-bottom: 5px solid var(--color-primary);
+    }
+}
