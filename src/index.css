@@ -52,3 +52,33 @@ header nav {
         border-bottom: 5px solid var(--color-primary);
     }
 }
+
+/* Header EndRegion */
+
+/* Main Region */
+main {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+main .tools {
+    background-color: var(--color-primary);
+
+    padding: 2rem 0;
+
+    & .col {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        padding: 1rem;
+
+        text-transform: uppercase;
+    }
+
+    & .service-img {
+        height: 3rem;
+    }
+}
+
+/* Main EndRegion */
