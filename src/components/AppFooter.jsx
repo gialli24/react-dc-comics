@@ -6,58 +6,190 @@ import twitter from '/img/footer-twitter.png'
 import youtube from '/img/footer-youtube.png'
 
 export default function AppFooter() {
+
+    const navs = [
+        {
+            id: 1,
+            title: "DC Comics",
+            urls: [
+                {
+                    id: 1,
+                    text: "Characters",
+                    link: "#"
+                },
+                {
+                    id: 2,
+                    text: "Comics",
+                    link: "#"
+                },
+                {
+                    id: 3,
+                    text: "TV",
+                    link: "#"
+                },
+                {
+                    id: 4,
+                    text: "Games",
+                    link: "#"
+                },
+                {
+                    id: 5,
+                    text: "Collectibles",
+                    link: "#"
+                },
+                {
+                    id: 6,
+                    text: "Videos",
+                    link: "#"
+                },
+                {
+                    id: 7,
+                    text: "Fans",
+                    link: "#"
+                },
+                {
+                    id: 8,
+                    text: "News",
+                    link: "#"
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: "DC",
+            urls: [
+                {
+                    id: 1,
+                    text: "Terms Of Use",
+                    link: "#"
+                },
+                {
+                    id: 2,
+                    text: "Privacy policy (New)",
+                    link: "#"
+                },
+                {
+                    id: 3,
+                    text: "Ad Choices",
+                    link: "#"
+                },
+                {
+                    id: 4,
+                    text: "Advertising",
+                    link: "#"
+                },
+                {
+                    id: 5,
+                    text: "Jobs",
+                    link: "#"
+                },
+                {
+                    id: 6,
+                    text: "Subscriptions",
+                    link: "#"
+                },
+                {
+                    id: 7,
+                    text: "Talent Workshops",
+                    link: "#"
+                },
+                {
+                    id: 8,
+                    text: "CPSC Certificates",
+                    link: "#"
+                },
+                {
+                    id: 9,
+                    text: "Ratings",
+                    link: "#"
+                },
+                {
+                    id: 10,
+                    text: "Shop Help",
+                    link: "#"
+                },
+                {
+                    id: 11,
+                    text: "Contact Us",
+                    link: "#"
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: "Sites",
+            urls: [
+                {
+                    id: 1,
+                    text: "DC",
+                    link: "#"
+                },
+                {
+                    id: 2,
+                    text: "MAD Magazine",
+                    link: "#"
+                },
+                {
+                    id: 3,
+                    text: "DC Kids",
+                    link: "#"
+                },
+                {
+                    id: 4,
+                    text: "DC Universe",
+                    link: "#"
+                },
+                {
+                    id: 5,
+                    text: "DC Power Visa",
+                    link: "#"
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: "Shop",
+            urls: [
+                {
+                    id: 1,
+                    text: "Shop DC",
+                    link: "#"
+                },
+                {
+                    id: 2,
+                    text: "Shop DC Collectibles",
+                    link: "#"
+                }
+            ]
+        }
+    ]
+
     return (
         <footer>
             <div className="pagination-container">
                 <div className="container">
                     <div className='pagination'>
                         <div className="row row-cols-3">
-                            <div className="col">
-                                <h5>Dc Comics</h5>
-                                <ul className='list-unstyled'>
-                                    <li>Characters</li>
-                                    <li>Comics</li>
-                                    <li>Movies</li>
-                                    <li>TV</li>
-                                    <li>Games</li>
-                                    <li>Collectibles</li>
-                                    <li>Videos</li>
-                                    <li>Fans</li>
-                                    <li>News</li>
-                                </ul>
 
-                                <h5>Shop</h5>
-                                <ul className='list-unstyled'>
-                                    <li>Shop DC</li>
-                                    <li>Shop DC Collectibles</li>
-                                </ul>
-                            </div>
-                            <div className="col">
-                                <h5>Dc</h5>
-                                <ul className='list-unstyled'>
-                                    <li>Terms of Use</li>
-                                    <li>Privacy Policy (New)</li>
-                                    <li>Ad Choices</li>
-                                    <li>Advertising</li>
-                                    <li>Jobs</li>
-                                    <li>Subscriptions</li>
-                                    <li>Talent Workshops</li>
-                                    <li>CPSC Certificates</li>
-                                    <li>Ratings</li>
-                                    <li>Shop Help</li>
-                                    <li>Contact Us</li>
-                                </ul>
-                            </div>
-                            <div className="col">
-                                <h5>Sites</h5>
-                                <ul className='list-unstyled'>
-                                    <li>DC</li>
-                                    <li>MAD Magazine</li>
-                                    <li>DC Kids</li>
-                                    <li>DC Universe</li>
-                                    <li>DC Power Visa</li>
-                                </ul>
-                            </div>
+                            {
+                                navs.map((nav) => (
+
+                                    <div key={nav.id} className="col">
+                                        <h5>{nav.title}</h5>
+                                        <ul className='list-unstyled'>
+                                            {
+                                                nav.urls.map((url) => (
+                                                    <li key={url.id}>
+                                                        <a href={url.link} className='nav-link'>{url.text}</a>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
+
+                                ))
+                            }
+
                         </div>
                     </div>
 
