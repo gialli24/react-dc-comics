@@ -58,13 +58,70 @@ header nav {
 /* Header EndRegion */
 
 /* Main Region */
-main {
+main>.jumbo {
+    height: 20rem;
+    background-image: url("/img/jumbotron.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+main>.series {
+    position: relative;
+
     background-color: var(--color-dark);
     color: var(--color-white);
 }
 
+main>.series .title-tag {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+
+    background-color: var(--color-primary);
+
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+    padding: 10px 15px;
+}
+
+main>.series .comic {
+    padding: 1rem;
+}
+
+main>.series .comic>img {
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+
+    margin-bottom: 1.5rem;
+}
+
+main>.series .actions {
+    margin-top: 2rem;
+
+    text-align: center;
+}
+
+main>.series .actions>button {
+    border: none;
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+    padding: 0.5rem 4rem;
+}
+
 main .tools {
     background-color: var(--color-primary);
+    color: var(--color-white);
 
     padding: 2rem 0;
 
