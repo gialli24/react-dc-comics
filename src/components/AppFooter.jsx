@@ -7,7 +7,7 @@ import youtube from '/img/footer-youtube.png'
 
 export default function AppFooter() {
 
-    const navs = [
+    const navGroups = [
         {
             id: 1,
             title: "DC Comics",
@@ -171,9 +171,9 @@ export default function AppFooter() {
                     <nav className="row row-cols-3">
 
                         {
-                            navs.map((navGroup) => (
+                            navGroups.map((navGroup) => (
 
-                                <div key={navGroup.id} className="nav-group col">
+                                <div key={navGroup.id} className="pippo col">
                                     <h5>{navGroup.title}</h5>
 
                                     <ul className='list-unstyled'>
