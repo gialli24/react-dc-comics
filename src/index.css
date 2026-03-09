@@ -15,26 +15,27 @@ body {
 
 /* Header region */
 header {
-    height: 100px;
+    height: 6rem;
+
     background-color: var(--color-white);
+}
 
-    &>.container {
-        height: 100%;
+header .container {
+    height: 100%;
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo {
-    height: 50%;
+    height: 4rem;
 }
 
 header nav {
     height: 100%;
-    display: flex;
-    gap: 2rem;
+
+    /* text-transform: uppercase;
 
     &>.nav-item {
         height: 100%;
@@ -52,7 +53,38 @@ header nav {
     &>.nav-item.active {
         color: var(--color-primary);
         border-bottom: 5px solid var(--color-primary);
-    }
+    } */
+}
+
+header nav>ul {
+    height: 100%;
+}
+
+header nav li {
+    height: 100%;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    border-bottom: 5px solid var(--color-white);
+}
+
+header nav a {
+    margin: 0 1rem;
+
+    font-weight: 600;
+
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--color-dark);
+}
+
+header nav li.active {
+    border-bottom: 5px solid var(--color-primary);
 }
 
 /* Header EndRegion */

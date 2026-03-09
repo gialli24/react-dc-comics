@@ -64,14 +64,18 @@ export default function AppHeader() {
             <div className="container">
                 <img src={dcLogo} alt="DC Logo" className='logo' />
 
-                <nav className='text-uppercase'>
+                <nav>
+                    <ul className='list-unstyled'>
 
-                    {
-                        links.map((link) => (
-                            <a href={link.url} className={link.isCurrent ? "nav-item active" : "nav-item"}>{link.text}</a>
-                        ))
-                    }
+                        {
+                            links.map((link) => (
+                                <li key={link.id} className={link.isCurrent ? "active" : ""}>
+                                    <a href={link.url}>{link.text}</a>
+                                </li>
+                            ))
+                        }
 
+                    </ul>
                 </nav>
             </div>
         </header>
