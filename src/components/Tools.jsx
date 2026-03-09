@@ -6,31 +6,37 @@ import powerVisa from '/img/buy-dc-power-visa.svg'
 
 export default function Tools() {
     return (
-        <div className="tools">
+        <section className="services">
+
             <div className="container">
                 <div className="row row-cols-lg-5 row-cols-md-3 row-cols-1">
-                    <div className="col">
-                        <img src={buyComics} alt="buy Comics" className='service-img' />
+
+                    <div className="service col">
+                        <img src={buyComics} alt="buy Comics" />
                         <span>Digital Comics</span>
                     </div>
-                    <div className="col">
-                        <img src={merchandise} alt="buy Comics" className='service-img' />
+
+                    <div className="service col">
+                        <img src={merchandise} alt="buy Comics" />
                         <span>DC Merchandise</span>
                     </div>
-                    <div className="col">
-                        <img src={subscription} alt="buy Comics" className='service-img' />
+
+                    <div className="service col">
+                        <img src={subscription} alt="buy Comics" />
                         <span>Subscription</span>
                     </div>
-                    <div className="col">
-                        <img src={locator} alt="buy Comics" className='service-img' />
+
+                    <div className="service col">
+                        <img src={locator} alt="buy Comics" />
                         <span>Comic Shop Locator</span>
                     </div>
-                    <div className="col">
-                        <img src={powerVisa} alt="buy Comics" className='service-img' />
+
+                    <div className="service col">
+                        <img src={powerVisa} alt="buy Comics" />
                         <span>DC Power Visa</span>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

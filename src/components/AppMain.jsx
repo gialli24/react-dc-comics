@@ -159,7 +159,8 @@ export default function AppMain() {
 
     return (
         <main>
-            <div className="jumbo"></div>
+            <section className="jumbo"></section>
+
             <section className="series">
                 <div className="container py-5">
                     <span className="title-tag">
@@ -179,11 +180,12 @@ export default function AppMain() {
 
                     </div>
 
-                    <div className="actions">
+                    <div className="wrapper">
                         <button>Load More</button>
                     </div>
                 </div>
             </section>
+
             <Tools />
         </main>
     );

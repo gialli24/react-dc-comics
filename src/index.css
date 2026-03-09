@@ -112,13 +112,13 @@ main>.series .comic>img {
     margin-bottom: 1.5rem;
 }
 
-main>.series .actions {
+main>.series .wrapper {
     margin-top: 2rem;
 
     text-align: center;
 }
 
-main>.series .actions>button {
+main>.series .wrapper>button {
     border: none;
 
     background-color: var(--color-primary);
@@ -132,25 +132,20 @@ main>.series .actions>button {
     padding: 0.5rem 4rem;
 }
 
-main .tools {
+main>.services {
     background-color: var(--color-primary);
     color: var(--color-white);
 
     padding: 2rem 0;
+}
 
-    & .col {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+main>.services .service {
+    text-transform: uppercase;
+}
 
-        padding: 1rem;
-
-        text-transform: uppercase;
-    }
-
-    & .service-img {
-        height: 3rem;
-    }
+main>.services .service>img {
+    margin-right: 1rem;
+    height: 3rem;
 }
 
 /* Main EndRegion */
