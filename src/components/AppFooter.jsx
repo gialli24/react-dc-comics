@@ -166,36 +166,35 @@ export default function AppFooter() {
 
     return (
         <footer>
-            <div className="pagination-container">
+            <section className="footer-nav">
                 <div className="container">
-                    <div className='pagination'>
-                        <div className="row row-cols-3">
+                    <nav className="row row-cols-3">
 
-                            {
-                                navs.map((nav) => (
+                        {
+                            navs.map((navGroup) => (
 
-                                    <div key={nav.id} className="col">
-                                        <h5>{nav.title}</h5>
-                                        <ul className='list-unstyled'>
-                                            {
-                                                nav.urls.map((url) => (
-                                                    <li key={url.id}>
-                                                        <a href={url.link} className='nav-link'>{url.text}</a>
-                                                    </li>
-                                                ))
-                                            }
-                                        </ul>
-                                    </div>
+                                <div key={navGroup.id} className="nav-group col">
+                                    <h5>{navGroup.title}</h5>
 
-                                ))
-                            }
+                                    <ul className='list-unstyled'>
+                                        {
+                                            navGroup.urls.map((url) => (
+                                                <li key={url.id}>
+                                                    <a href={url.link}>{url.text}</a>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
 
-                        </div>
-                    </div>
+                            ))
+                        }
+
+                    </nav>
 
                     <img src={dcLogoBG} alt="" className='dcLogoBG' />
                 </div>
-            </div>
+            </section>
 
             <div className="footer-banner">
                 <div className="container">

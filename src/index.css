@@ -151,43 +151,41 @@ main>.services .service>img {
 /* Main EndRegion */
 
 /* Footer Region */
-footer {
-    & .pagination-container {
-        background-image: url("/img/footer-bg.jpg");
-        background-position: center;
-        background-size: cover;
+footer>.footer-nav {
+    background-image: url("/img/footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
 
-        padding: 2rem 0;
+    padding: 3rem 0;
 
-        color: var(--color-white);
+    color: var(--color-white);
 
-        overflow: hidden;
-    }
-
-    & .container {
-        position: relative;
-    }
-
+    overflow: hidden;
 }
 
-footer .pagination-container .col {
-    &>h5 {
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: -1px;
-    }
-
-    & li {
-        font-size: 1rem;
-        color: var(--color-secondary);
-    }
+footer>.footer-nav>.container {
+    position: relative;
 }
 
-footer .pagination-container .dcLogoBG {
+footer>.footer-nav .dcLogoBG {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+}
+
+footer>.footer-nav nav {
+    width: fit-content;
+}
+
+footer.footer-nav nav>.nav-group {
+    background-color: red;
+}
+
+footer.footer-nav nav>.nav-group>h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 footer>.footer-banner {
