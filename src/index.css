@@ -178,43 +178,49 @@ footer>.footer-nav nav {
     width: fit-content;
 }
 
-footer.footer-nav nav>.pippo {
-    background-color: red;
-}
-
-footer.footer-nav nav>.nav-group>h5 {
+footer>.footer-nav nav>.nav-group>h5 {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
 
-footer>.footer-banner {
-    background-color: var(--color-banner-bg);
+footer>.footer-nav nav>.nav-group>ul>li>a {
+    text-decoration: none;
 
-    padding: 1rem 0;
-
-    & .signup-btn {
-        text-transform: uppercase;
-
-        background-color: transparent;
-        color: white;
-
-        padding: 0.5rem 1rem;
-
-        border: 1px solid var(--color-primary);
-    }
+    color: var(--color-secondary);
 }
 
-footer>.footer-banner .social-nav {
+footer>.footer-banner {
+    background-color: var(--color-banner-bg);
+    padding: 1rem 0;
+}
+
+footer>.footer-banner .wrapper {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+}
 
-    & a {
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: -1px;
-    }
+footer>.footer-banner button {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+    background-color: transparent;
+    color: white;
+
+    padding: 0.5rem 1rem;
+
+    border: 2px solid var(--color-primary);
+}
+
+footer>.footer-banner nav>a {
+    margin: 0 0.5rem;
+
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 /* Footer EndRegion */

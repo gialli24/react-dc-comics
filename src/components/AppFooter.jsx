@@ -173,7 +173,7 @@ export default function AppFooter() {
                         {
                             navGroups.map((navGroup) => (
 
-                                <div key={navGroup.id} className="pippo col">
+                                <div key={navGroup.id} className="nav-group col">
                                     <h5>{navGroup.title}</h5>
 
                                     <ul className='list-unstyled'>
@@ -196,15 +196,18 @@ export default function AppFooter() {
                 </div>
             </section>
 
-            <div className="footer-banner">
+            <section className="footer-banner">
                 <div className="container">
-                    <div className="d-flex justify-content-between align-items-center gap-4">
-                        <button className='signup-btn'>
+
+                    <div className="wrapper">
+
+                        <button>
                             Sign-up Now!
                         </button>
 
-                        <div className="social-nav">
+                        <nav>
                             <a href="#">Follow Us</a>
+
                             <a href="#">
                                 <img src={facebook} alt="" />
                             </a>
@@ -220,10 +223,10 @@ export default function AppFooter() {
                             <a href="#">
                                 <img src={periscope} alt="" />
                             </a>
-                        </div>
+                        </nav>
                     </div>
                 </div>
-            </div>
+            </section>
         </footer>
     );
 }
