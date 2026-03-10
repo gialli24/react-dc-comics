@@ -1,3 +1,4 @@
+import ComicCard from './ComicCard';
 import Tools from './Tools'
 
 export default function AppMain({ comics }) {
@@ -16,10 +17,7 @@ export default function AppMain({ comics }) {
 
                         {
                             comics.map((comic) => (
-                                <div key={comic.id} className="comic col">
-                                    <img src={comic.thumb} alt={comic.title} />
-                                    <h5>{comic.title}</h5>
-                                </div>
+                                < ComicCard comic={comic} key={comic.id} />
                             ))
                         }
 
